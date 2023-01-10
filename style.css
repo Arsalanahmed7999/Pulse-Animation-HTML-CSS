@@ -1,0 +1,267 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    animation: bg 20s linear infinite;
+}
+
+.bgPulse{
+    width: 100%;
+    height: 100%;
+}
+
+span{
+    height: 80px;
+    width: 80px;
+    top: 0;
+    background-color: #fff;
+    position: absolute;
+}
+
+span:nth-child(3n+1){
+    background: transparent;
+    border: 5px solid white;
+    
+
+}
+span:nth-child(1){
+    top: 50%;
+    left: 20%;
+    animation: animate 10s linear infinite;
+}
+span:nth-child(2){
+    top: 70%;
+    left: 80%;
+    animation: animate 12s linear infinite;
+
+}
+span:nth-child(3){
+    top: 10%;
+    left: 80%;
+    animation: animate 11s linear infinite;
+
+}
+span:nth-child(4){
+    top: 20%;
+    left: 40%;
+    animation: animate 9s linear infinite;
+
+
+}
+span:nth-child(5){
+    top: 50%;
+    left: 50%;
+    animation: animate 14s linear infinite;
+
+}
+span:nth-child(6){
+    top: 30%;
+    left: 10%;
+    animation: animate 8s linear infinite;
+
+}
+span:nth-child(7){
+    top: 70%;
+    left: 60%;
+    animation: animate 4s linear infinite;
+
+}
+span:nth-child(8){
+    top: 80%;
+    left: 10%;
+    animation: animate 7s linear infinite;
+
+
+}
+span:nth-child(9){
+    top: 40%;
+    left: 85%;
+    animation: animate 3s linear infinite;
+
+}
+span:nth-child(10){
+    top: 70%;
+    left: 40%;
+    animation: animate 5s linear infinite;
+
+}
+
+@keyframes animate {
+    0%{
+        transform: scale(0) translateY(-100%) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1) translateY(100%) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes bg {
+    0%{
+        background: rgb(255, 217, 0);
+    }
+    25%{
+        background: rgb(255, 0, 0);
+    }
+    50%{
+        background: rgb(94, 255, 0);
+    }
+75%{
+        background: rgb(0, 255, 145);
+    }
+    100%{
+        background: rgb(191, 0, 255);
+    }
+}
+
+ */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation: bg 20s linear infinite;
+}
+
+.bgPulse{
+    width: 100%;
+    height:100%;
+
+}
+
+span{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    top: 0;
+    animation: animate 10s linear infinite;
+}
+
+
+span:nth-child(3n+1){
+    background-color: transparent;
+    border: 5px solid white;
+}
+
+
+span:nth-child(1){
+    left: 60%;
+    top: 20%;
+    animation: animate 4s linear infinite;
+
+}
+
+span:nth-child(2){
+    top: 70%;
+    left: 80%;
+    animation: animate 6s linear infinite;
+
+
+}
+span:nth-child(3){
+    top: 10%;
+    left: 80%;
+    animation: animate 12s linear infinite;
+
+
+}
+span:nth-child(4){
+    top: 10%;
+    left: 30%;
+    animation: animate 14s linear infinite;
+
+}
+
+span:nth-child(5){
+    top: 50%;
+    left: 50%;
+    animation: animate 5s linear infinite;
+
+
+}
+span:nth-child(6){
+    top: 30%;
+    left: 10%;
+    animation: animate 9s linear infinite;
+
+
+}
+span:nth-child(7){
+    top: 70%;
+    left: 60%;
+    animation: animate 11s linear infinite;
+
+
+}
+span:nth-child(8){
+    top: 80%;
+    left: 10%;
+    animation: animate 13s linear infinite;
+
+
+
+}
+span:nth-child(9){
+    top: 40%;
+    left: 85%;
+    animation: animate 7s linear infinite;
+
+
+}
+span:nth-child(10){
+    top: 70%;
+    left: 40%;
+    animation: animate 3s linear infinite;
+
+
+}
+
+@keyframes animate {
+    0%{
+        transform: scale(0) translateY(-100%) rotate(0deg);
+    }
+    100%{
+        transform: scale(1) translateY(100%) rotate(365deg);
+    }
+}
+
+@keyframes bg {
+    0%{
+        background: rgb(255, 217, 0);
+    }
+    25%{
+        background: rgb(255, 0, 0);
+    }
+    50%{
+        background: rgb(94, 255, 0);
+    }
+    75%{
+        background: rgb(0, 255, 145);
+    }
+    100%{
+        background: rgb(191, 0, 255);
+    }
+}
